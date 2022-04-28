@@ -22,3 +22,4 @@ print(r.ok , r.status_code , r.reason, r.url)
 
 jl = json.loads(r.text)
 jl
+curl -X PUT -H "Authorization: ..." -H "Content-Type: application/json" -d '{"id":1234567,"type":"page", "title":"Your page Title", "ancestors":[{"id":9876543}], "space":{"key":"xxx"},"version":{"number":17}}' "https://abc.def.domain.com/rest/api/content/1234567"
